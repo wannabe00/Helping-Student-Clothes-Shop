@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Services - Mariam Ghvinjilia</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="services.css" />
+		<link rel="stylesheet" href="responsive.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<!-- Navigation -->
+		<nav>
+			<div class="nav-container">
+				<h2 class="logo">Mariam Ghvinjilia</h2>
+				<ul class="nav-menu">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="services.html" class="active">Services</a></li>
+					<li><a href="news.html">News</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<!-- Page Header -->
+		<section class="page-header">
+			<div class="container">
+				<h1>Our Services</h1>
+				<p>What we offer to our customers</p>
+			</div>
+		</section>
+
+		<!-- Main Services -->
+		<section class="main-services">
+			<div class="container">
+				<h2>Our Services</h2>
+				<div class="services-grid">
+					<div class="service-card-large">
+						<i class="fas fa-shoe-prints"></i>
+						<h3>Custom Design</h3>
+						<p>
+							We create special shoes just for you. Choose colors,
+							materials, and style.
+						</p>
+						<ul>
+							<li>Personal meeting with designer</li>
+							<li>Choose your materials</li>
+							<li>Perfect fit guarantee</li>
+							<li>4-6 weeks to make</li>
+						</ul>
+						<div class="price">From $2,500</div>
+						<a href="contact.html" class="btn">Book Now</a>
+					</div>
+
+					<div class="service-card-large">
+						<i class="fas fa-tools"></i>
+						<h3>Repair Service</h3>
+						<p>
+							Fix and clean your favorite shoes to make them look new
+							again.
+						</p>
+						<ul>
+							<li>Fix broken soles</li>
+							<li>Clean and restore leather</li>
+							<li>Replace broken parts</li>
+							<li>Color touch-ups</li>
+						</ul>
+						<div class="price">From $150</div>
+						<a href="contact.html" class="btn">Book Now</a>
+					</div>
+
+					<div class="service-card-large">
+						<i class="fas fa-ruler"></i>
+						<h3>Perfect Fitting</h3>
+						<p>
+							Get the right size with our professional fitting service.
+						</p>
+						<ul>
+							<li>Measure your feet</li>
+							<li>Find perfect size</li>
+							<li>Comfort advice</li>
+							<li>Free with purchase</li>
+						</ul>
+						<div class="price">Free</div>
+						<a href="contact.html" class="btn">Book Now</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Product Collections -->
+		<section class="collections">
+			<div class="container">
+				<h2>Our Collections</h2>
+				<div class="collection-grid">
+					<div class="collection-item">
+						<img
+							src="https://i.pinimg.com/736x/1a/a5/35/1aa535bac42dd5f4a60d9b4a1e6fa193.jpg"
+							alt="High Heels"
+						/>
+						<h3>High Heels</h3>
+						<p>Beautiful heels for special events</p>
+						<div class="price">$1,850 - $2,100</div>
+					</div>
+					<div class="collection-item">
+						<img
+							src="https://i.pinimg.com/736x/e8/bb/cf/e8bbcfd9c26562351ec9256e10f1b921.jpg"
+							alt="Pumps"
+						/>
+						<h3>Flats</h3>
+						<p>Perfect for everyday work</p>
+						<div class="price">$1,650 - $1,800</div>
+					</div>
+					<div class="collection-item">
+						<img
+							src="https://images.unsplash.com/photo-1598978340047-0b311af9de31?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+							alt="Boots"
+						/>
+						<h3>Luxury Boots</h3>
+						<p>Stylish boots for every season</p>
+						<div class="price">$1,950 - $2,200</div>
+					</div>
+					<div class="collection-item">
+						<img
+							src="https://i.pinimg.com/736x/99/2c/bc/992cbc83a0ad8c749302a5d7e7f24884.jpg"
+							alt="Sandals"
+						/>
+						<h3>Summer Sandals</h3>
+						<p>Comfortable and elegant sandals</p>
+						<div class="price">$1,400 - $1,700</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Service Form -->
+		<section class="service-form-section">
+			<div class="container">
+				<h2>Book a Service</h2>
+				<form class="service-form">
+					<div class="form-row">
+						<input type="text" placeholder="First Name" required />
+						<input type="text" placeholder="Last Name" required />
+					</div>
+					<div class="form-row">
+						<input type="email" placeholder="Email" required />
+						<input type="tel" placeholder="Phone" required />
+					</div>
+					<select required>
+						<option value="">Choose a service</option>
+						<option value="custom">Custom Design</option>
+						<option value="repair">Repair Service</option>
+						<option value="fitting">Fitting Service</option>
+					</select>
+					<textarea
+						placeholder="Tell us what you need..."
+						rows="4"
+					></textarea>
+					<button type="submit" class="btn">Send Request</button>
+				</form>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer>
+			<div class="container">
+				<div class="footer-content">
+					<div>
+						<h3>Mariam Ghvinjilia</h3>
+						<p>Luxury women's footwear</p>
+					</div>
+					<div>
+						<h4>Links</h4>
+						<ul>
+							<li><a href="about.html">About</a></li>
+							<li><a href="services.html">Services</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</div>
+					<div>
+						<h4>Follow Us</h4>
+						<div class="social-icons">
+							<a href="#"><i class="fab fa-facebook"></i></a>
+							<a href="#"><i class="fab fa-instagram"></i></a>
+							<a href="#"><i class="fab fa-twitter"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

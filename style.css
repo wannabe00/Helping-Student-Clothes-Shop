@@ -1,0 +1,361 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--pink-main: #ff69b4;
+	--pink-light: #ffb6c1;
+	--pink-dark: #dc143c;
+	--white: #ffffff;
+	--gray-light: #f5f5f5;
+	--gray-dark: #333333;
+	--text-color: #666666;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+	line-height: 1.6;
+	color: var(--gray-dark);
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+nav {
+	background: var(--white);
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+}
+
+.nav-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 2rem;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.logo {
+	color: transparent;
+	font-size: 1.5rem;
+	font-weight: 600;
+	position: relative;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	display: inline-block;
+	min-width: 200px;
+}
+
+.logo::before {
+	content: "Mariam Ghvinjilia";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: var(--pink-main);
+	font-size: 1.5rem;
+	font-weight: 600;
+	transition: all 0.3s ease;
+	filter: blur(0px);
+	opacity: 1;
+	white-space: nowrap;
+}
+
+.logo::after {
+	content: "Step into fashion with Mariam";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: var(--pink-main);
+	font-size: 1rem;
+	font-weight: 600;
+	transition: all 0.3s ease;
+	filter: blur(10px);
+	opacity: 0;
+	white-space: nowrap;
+}
+
+.logo:hover::before {
+	filter: blur(10px);
+	opacity: 0;
+}
+
+.logo:hover::after {
+	filter: blur(0px);
+	opacity: 1;
+}
+
+.nav-menu {
+	display: flex;
+	list-style: none;
+	gap: 2rem;
+}
+
+.nav-menu a {
+	text-decoration: none;
+	color: var(--gray-dark);
+	font-weight: 500;
+	transition: color 0.3s ease;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+	color: var(--pink-main);
+}
+
+.btn {
+	display: inline-block;
+	background: var(--pink-main);
+	color: var(--white);
+	padding: 12px 30px;
+	text-decoration: none;
+	border-radius: 25px;
+	font-weight: 600;
+	transition: all 0.3s ease;
+	border: none;
+	cursor: pointer;
+}
+
+.btn:hover {
+	background: var(--pink-dark);
+	transform: translateY(-2px);
+}
+
+section {
+	padding: 60px 0;
+}
+
+.page-header {
+	background: linear-gradient(135deg, var(--pink-light), var(--white));
+	padding: 120px 0 80px;
+	text-align: center;
+	margin-top: 80px;
+	height: 350px;
+}
+
+.page-header h1 {
+	font-size: 3rem;
+	color: var(--gray-dark);
+	margin-bottom: 1rem;
+}
+
+.page-header p {
+	font-size: 1.2rem;
+	color: var(--text-color);
+}
+
+.newsletter {
+	background: var(--pink-main);
+	color: var(--white);
+	text-align: center;
+}
+
+.newsletter h2 {
+	color: var(--white);
+	margin-bottom: 1rem;
+}
+
+.newsletter p {
+	color: var(--white);
+	margin-bottom: 2rem;
+}
+
+.newsletter-form {
+	display: flex;
+	gap: 1rem;
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+.newsletter-form input {
+	flex: 1;
+	padding: 12px;
+	border: none;
+	border-radius: 25px;
+	outline: none;
+}
+
+.newsletter-form button {
+	background: var(--white);
+	color: var(--pink-main);
+	padding: 12px 25px;
+	border: none;
+	border-radius: 25px;
+	font-weight: 600;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.newsletter-form button:hover {
+	transform: translateY(-2px);
+}
+
+footer {
+	background: var(--gray-dark);
+	color: var(--white);
+	padding: 3rem 0;
+}
+
+.footer-content {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 2rem;
+}
+
+.footer-content h3,
+.footer-content h4 {
+	color: var(--pink-main);
+	margin-bottom: 1rem;
+}
+
+.footer-content ul {
+	list-style: none;
+}
+
+.footer-content ul li {
+	margin-bottom: 0.5rem;
+}
+
+.footer-content ul li a {
+	color: var(--white);
+	text-decoration: none;
+	transition: color 0.3s ease;
+}
+
+.footer-content ul li a:hover {
+	color: var(--pink-main);
+}
+
+.social-icons {
+	display: flex;
+	gap: 1rem;
+}
+
+.social-icons a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 40px;
+	height: 40px;
+	background: var(--pink-main);
+	color: var(--white);
+	border-radius: 50%;
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+	background: var(--white);
+	color: var(--pink-main);
+	transform: translateY(-3px);
+}
+
+.product-card,
+.service-card,
+.news-card,
+.location-card,
+.event-card,
+.faq-item,
+.contact-method {
+	-webkit-transition: transform 0.3s ease;
+	-moz-transition: transform 0.3s ease;
+	-o-transition: transform 0.3s ease;
+	transition: transform 0.3s ease;
+}
+
+.product-card:hover,
+.service-card:hover,
+.news-card:hover,
+.location-card:hover,
+.event-card:hover,
+.faq-item:hover,
+.contact-method:hover {
+	-webkit-transform: translateY(-5px);
+	-moz-transform: translateY(-5px);
+	-ms-transform: translateY(-5px);
+	-o-transform: translateY(-5px);
+	transform: translateY(-5px);
+}
+
+.btn:hover,
+.newsletter-form button:hover,
+.social-icons a:hover {
+	-webkit-transform: translateY(-2px);
+	-moz-transform: translateY(-2px);
+	-ms-transform: translateY(-2px);
+	-o-transform: translateY(-2px);
+	transform: translateY(-2px);
+}
+
+.product-card,
+.service-card,
+.news-card,
+.location-card,
+.btn,
+.newsletter-form input,
+.newsletter-form button {
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
+
+.product-card,
+.service-card,
+.news-card,
+.location-card,
+nav {
+	-webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.page-header,
+.hero {
+	background: -webkit-linear-gradient(135deg, var(--pink-light), var(--white));
+	background: -moz-linear-gradient(135deg, var(--pink-light), var(--white));
+	background: -o-linear-gradient(135deg, var(--pink-light), var(--white));
+	background: linear-gradient(135deg, var(--pink-light), var(--white));
+}
+
+.logo::before,
+.logo::after {
+	-webkit-filter: blur(0px);
+	-moz-filter: blur(0px);
+	filter: blur(0px);
+}
+
+.logo:hover::before {
+	-webkit-filter: blur(10px);
+	-moz-filter: blur(10px);
+	filter: blur(10px);
+}
+
+.logo:hover::after {
+	-webkit-filter: blur(0px);
+	-moz-filter: blur(0px);
+	filter: blur(0px);
+}
+
+@media (max-width: 768px) {
+	.nav-menu {
+		display: none;
+	}
+
+	.page-header h1 {
+		font-size: 2rem;
+	}
+
+	.newsletter-form {
+		flex-direction: column;
+	}
+}

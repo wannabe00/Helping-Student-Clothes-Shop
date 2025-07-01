@@ -1,0 +1,160 @@
+.ceo-section {
+	padding: 60px 0;
+	background: var(--white);
+}
+
+.ceo-content {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	gap: 3rem;
+	align-items: center;
+}
+
+.ceo-content img {
+	width: 100%;
+	height: auto;
+	border-radius: 15px;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.ceo-text h2 {
+	color: var(--gray-dark);
+	margin-bottom: 0.5rem;
+}
+
+.ceo-text h3 {
+	color: var(--pink-main);
+	margin-bottom: 1rem;
+}
+
+.ceo-text p {
+	color: var(--text-color);
+	margin-bottom: 1rem;
+}
+
+.history-section {
+	background: var(--gray-light);
+	padding: 60px 0;
+}
+
+.history-section h2 {
+	text-align: center;
+	margin-bottom: 3rem;
+	color: var(--gray-dark);
+}
+
+.history-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 2rem;
+}
+
+.history-item {
+	text-align: center;
+	padding: 2rem;
+	background: var(--white);
+	border-radius: 15px;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.history-item h3 {
+	color: var(--pink-main);
+	font-size: 2rem;
+	margin-bottom: 1rem;
+}
+
+.history-item p {
+	color: var(--text-color);
+}
+
+.mission-section {
+	padding: 60px 0;
+	background: var(--white);
+	text-align: center;
+}
+
+.mission-section h2 {
+	color: var(--gray-dark);
+	margin-bottom: 2rem;
+}
+
+.mission-section p {
+	color: var(--text-color);
+	margin-bottom: 2rem;
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.mission-points {
+	display: flex;
+	justify-content: center;
+	gap: 3rem;
+	margin-top: 2rem;
+}
+
+.point {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	color: var(--gray-dark);
+}
+
+.point i {
+	color: var(--pink-main);
+	font-size: 1.5rem;
+}
+
+.quality-section {
+	background: var(--gray-light);
+	padding: 60px 0;
+}
+
+.quality-section h2 {
+	text-align: center;
+	margin-bottom: 3rem;
+	color: var(--gray-dark);
+}
+
+.quality-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 2rem;
+}
+
+.quality-item {
+	text-align: center;
+	background: var(--white);
+	padding: 2rem;
+	border-radius: 15px;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.quality-item img {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+	border-radius: 10px;
+	margin-bottom: 1rem;
+}
+
+.quality-item h3 {
+	color: var(--gray-dark);
+	margin-bottom: 1rem;
+}
+
+.quality-item p {
+	color: var(--text-color);
+}
+
+@media (max-width: 768px) {
+	.ceo-content {
+		grid-template-columns: 1fr;
+		gap: 2rem;
+	}
+
+	.mission-points {
+		flex-direction: column;
+		gap: 1rem;
+	}
+}
