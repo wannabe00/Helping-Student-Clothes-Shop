@@ -4,7 +4,7 @@ A website showcasing luxury women's footwear and design services.
 
 ## 🌐 Live Website
 
-**https://wannabe00.github.io/temp/](https://wannabe00.github.io/Helping-Student-Clothes-Shop/**
+**https://wannabe00.github.io/Helping-Student-Clothes-Shop/**
 
 ## 📋 About
 
