@@ -1,3 +1,4 @@
+/* Fix positions */
 @media (max-width: 768px) {
 	.nav-container {
 		flex-direction: column;
