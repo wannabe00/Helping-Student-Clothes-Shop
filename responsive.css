@@ -339,13 +339,13 @@
 		flex-direction: row;
 		text-align: left;
 	}
+	.contact-method i {
+		margin-right: 1rem;
+		margin-bottom: 0;
+	}
 	.mission-points {
 		flex-direction: row;
 		gap: 3rem;
 		justify-content: center;
-	}
-	.contact-method i {
-		margin-right: 1rem;
-		margin-bottom: 0;
 	}
 }
